@@ -37,7 +37,7 @@ namespace _25_3_2022
             }
             else
             {
-                MessageBox.Show("tidak boleh kosong");
+                MessageBox.Show("Error");
             }
         }
 
