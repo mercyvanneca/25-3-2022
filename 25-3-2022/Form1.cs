@@ -91,7 +91,7 @@ namespace _25_3_2022
         private void CheckBox_Block_CheckedChanged(object sender, EventArgs e)
 
         {
-
+            if (CheckBox_Block.Checked == true)
             {
                 this.Button1.Enabled = false;
                 this.Button2.Enabled = false;
@@ -99,6 +99,25 @@ namespace _25_3_2022
                 this.Button4.Enabled = false;
                 this.Button5.Enabled = false;
             }
+            if (CheckBox_Block.Checked == false)
+            {
+                this.Button1.Enabled = true;
+                this.Button2.Enabled = true;
+                this.Button3.Enabled = true;
+                this.Button4.Enabled = true;
+                this.Button5.Enabled = true;
+            }
+        }
+
+        private void ComboBox_Mode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ComboBox_Mode.Items.Add("Add");
+            ComboBox_Mode.Items.Add("Replace");
         }
     }
 }

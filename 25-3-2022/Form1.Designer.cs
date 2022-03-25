@@ -87,6 +87,7 @@
             this.ComboBox_Mode.Name = "ComboBox_Mode";
             this.ComboBox_Mode.Size = new System.Drawing.Size(225, 23);
             this.ComboBox_Mode.TabIndex = 5;
+            this.ComboBox_Mode.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Mode_SelectedIndexChanged);
             // 
             // CheckBox_Block
             // 
@@ -188,7 +189,8 @@
             this.Controls.Add(this.TextBox_Data);
             this.Controls.Add(this.Label_Data);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Form Tugas";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
